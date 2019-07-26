@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- 
+      - 引入react和react-dom两个js文件
+      - 创建React元素
+      - 渲染React元素到页面中
+    -->
+
+    <!-- 1, 引入react和react-dom两个js文件 -->
+    <script src="./node_modules/react/umd/react.development.js"></script>
+    <script src="./node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script>
+      // 2, 创建react元素
+      // 参数1：创建的元素的名称  标签名
+      // 参数2：元素的属性 是一个对象  null表示没有属性
+      // 参数3：元素的内容  可以是多个
+      // const element = React.createElement('h1', null, 'hello react')
+      const element = <h1>哈哈哈</h1>
+      // 3. 渲染react元素
+      // 参数1：react元素
+      // 参数2：指定渲染的位置（DOM对象）
+      ReactDOM.render(element, document.getElementById('root'))
+    </script>
+  </body>
+</html>
